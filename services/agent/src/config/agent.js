@@ -1,8 +1,8 @@
 const { v4: uuidv4 } = require("uuid");
 const os = require("os");
 
-const AGENT_ID = process.env.AGENT_ID || uuidv4();
-
+const getDeviceId = require("../utils/device-id");
+const AGENT_ID = getDeviceId();
 module.exports = {
     id: AGENT_ID,
     name: process.env.AGENT_NAME || "JES Agent",
