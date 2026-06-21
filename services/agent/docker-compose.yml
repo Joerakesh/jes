@@ -1,0 +1,14 @@
+services:
+  agent:
+    build: .
+
+    container_name: jes-agent
+
+    ports:
+      - "5050:5050"
+
+    volumes:
+      - .:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+
+    restart: unless-stopped
