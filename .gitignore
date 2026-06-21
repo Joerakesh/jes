@@ -1,0 +1,30 @@
+# Node
+node_modules
+dist
+build
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flutter
+.dart_tool
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Coverage
+coverage
+
+# Generated
+*.lock
