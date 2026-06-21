@@ -3,6 +3,7 @@ const cors = require("cors");
 
 const healthRoute = require("./routes/health");
 const systemRoute = require("./routes/system");
+const dockerRoute = require("./routes/docker");
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 
 app.use("/health", healthRoute);
 app.use("/system", systemRoute);
+app.use("/docker", dockerRoute);
 
 const PORT = process.env.PORT || 5050;
 
